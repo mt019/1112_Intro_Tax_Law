@@ -1,17 +1,26 @@
----
+--- 
 title: "1112 稅捐法導論（下）"
 author: "柯老師"
 date: "`r Sys.Date()`"
+documentclass: ctexbook
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+colorlinks: yes
+lot: yes
+lof: yes
+geometry: [a4paper, tmargin=2.5cm, bmargin=2.5cm, lmargin=3.5cm, rmargin=2.5cm]
 site: bookdown::bookdown_site
-documentclass: book
-output: bookdown::gitbook
-link-citations: true
-description: "111-2 學期《稅捐法導論》課堂筆記。采用R的bookdown制作，输出格式为bookdown::gitbook."
+description: "111-2 學期《稅捐法導論》課堂筆記。採用R的bookdown製作，輸出格式為bookdown::gitbook和bookdown::pdf_book。"
+github-repo: mt019/1112_Intro_Tax_Law
+#cover-image: images/cover.jpg
 ---
 
-# Preface {-}
+# 前言 {-}
 
 稅捐法導論
 
 
-111-2 學期《稅捐法導論》課堂筆記。采用R的bookdown製作，輸出格式為bookdown::gitbook。
+111-2 學期《稅捐法導論》課堂筆記。采用R的bookdown製作，輸出格式為bookdown::gitbook和bookdown::pdf_book。
+
+\mainmatter
