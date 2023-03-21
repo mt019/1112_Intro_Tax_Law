@@ -1,9 +1,10 @@
 book_filename: "1112_Intro_Tax_Law"
 clean: [packages.bib, bookdown.bbl]
+delete_merged_file: true
 language:
   label:
-    fig: "图 "
+    fig: "圖 "
     tab: "表 "
   ui:
-    edit: "编辑"
+    edit: "編輯"
     chapter_name: ["第 ", " 章"]
