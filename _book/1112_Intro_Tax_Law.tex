@@ -1,0 +1,2035 @@
+\documentclass[]{ctexbook}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{xltxtra,xunicode}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[a4paper,tmargin=2.5cm,bmargin=2.5cm,lmargin=3.5cm,rmargin=2.5cm]{geometry}
+\usepackage[unicode=true]{hyperref}
+\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\hypersetup{
+            pdftitle={1112 稅捐法導論（下）},
+            pdfauthor={柯老師},
+            colorlinks=true,
+            linkcolor=Maroon,
+            citecolor=Blue,
+            urlcolor=Blue,
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
+\usepackage[normalem]{ulem}
+% avoid problems with \sout in headers with hyperref:
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{booktabs}
+\usepackage{longtable}
+
+\usepackage{framed,color}
+\definecolor{shadecolor}{RGB}{248,248,248}
+
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\topfraction}{0.8}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\floatpagefraction}{0.75}
+
+\renewcommand\contentsname{目錄}
+\renewcommand\listfigurename{圖目錄}
+\renewcommand\listtablename{表目錄}
+
+% \renewcommand{\cftsecfont}{\stxs} %设置section条目的字体
+
+\let\oldhref\href
+\renewcommand{\href}[2]{#2\footnote{\url{#1}}}
+
+\makeatletter
+\newenvironment{kframe}{%
+\medskip{}
+\setlength{\fboxsep}{.8em}
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\makeatletter
+\@ifundefined{Shaded}{
+}{\renewenvironment{Shaded}{\begin{kframe}}{\end{kframe}}}
+\@ifpackageloaded{fancyvrb}{%
+  % https://github.com/CTeX-org/ctex-kit/issues/331
+  \RecustomVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},formatcom=\xeCJKVerbAddon}%
+}{}
+\makeatother
+
+\usepackage{makeidx}
+\makeindex
+
+\urlstyle{tt}
+
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+\frontmatter
+
+\title{1112 稅捐法導論（下）}
+\author{柯老師}
+\date{2023-03-29}
+
+\begin{document}
+\maketitle
+
+
+\thispagestyle{empty}
+
+\begin{center}
+稅捐
+
+是重要的分配正義之學
+\end{center}
+
+\setlength{\abovedisplayskip}{-5pt}
+\setlength{\abovedisplayshortskip}{-5pt}
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\listoftables
+\listoffigures
+\hypertarget{ux524dux8a00}{%
+\chapter*{前言}\label{ux524dux8a00}}
+
+
+稅捐法導論
+
+111-2 學期《稅捐法導論》課堂筆記。採用R的bookdown製作，輸出格式為bookdown::gitbook和bookdown::pdf\_book。
+
+\mainmatter
+
+\hypertarget{ux7b2cux4e00ux5468}{%
+\chapter{W01\_0221}\label{ux7b2cux4e00ux5468}}
+
+：有趣當作工作，是一件幸福的事情
+
+\begin{itemize}
+\tightlist
+\item
+  稅捐債務法
+\item
+  稅捐稽徵法（核課、徵收、執行）
+\item
+  稅捐處罰法
+\item
+  稅捐救濟法
+\end{itemize}
+
+這學期還要放假2次，僅保留期末考（2題）
+
+\hypertarget{ux7a05ux6350ux50b5ux52d9ux6cd5}{%
+\section{稅捐債務法}\label{ux7a05ux6350ux50b5ux52d9ux6cd5}}
+
+憲法第十九、二十三條規定
+\textbf{依法課稅原則}（對行政機關的誡命，Gebote）
+
+三個展開
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  構成要件法定（事實到法律之間的對應適用關係，叫做涵攝）
+\item
+  效果法定
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    稅額計算
+  \item
+    繳納期間（債務履行）
+  \end{enumerate}
+\item
+  程序法定
+\end{enumerate}
+
+\hypertarget{ux4f9dux6cd5ux8ab2ux7a05ux539fux5247}{%
+\subsection{依法課稅原則}\label{ux4f9dux6cd5ux8ab2ux7a05ux539fux5247}}
+
+\textbf{法}：制定法 + （授權的）法規命令 （\sout{行政規則}）
+行政規則 不能增加人民的稅捐負擔義務，行政機關也不可以透過行政規則，給予依法本不存在（法外的）的稅捐利益，``法外施恩''，也是對於依法課稅原則的抵觸
+
+依法課稅的反面：依法（才能）免稅。
+稅捐優惠應該在依法課稅原則的前提之下。
+
+實務的最大爭議，操作困難在於，法律沒有明白的授權，但行政機關用大量的行政命令去填補、填充``制定法與法規命令之規範不足之處''
+
+我們的法律制定密度太低，意志不清，法律本身很空洞，法規命令的制定也過於抽象。
+
+看法律不夠，要看行政規則（雖然法位階最低，但很重要）：
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  法令彙編
+\item
+  稅務問答Q\&A（自問自答，各地區國稅局達成共識的見解）
+\item
+  不公佈的解釋函令
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    稱``\textbf{個案函}''，爲了確保在個案中法律適用沒問題，下級機關會寫公文給上級機關，請問個別法律問題的解釋，法律見解，往往沒有對外公開
+  \item
+    上級機關（賦稅署）覺得這個是好問題，可能以``副知''的方式，讓別的國稅局也知道，變成\textbf{通案函}，讓各地的行政機關有一致的法律適用
+  \item
+    經過一段時間，確認沒問題了，就會正式公告成爲\textbf{公告函}，進入\textbf{法令彙編}。
+  \end{enumerate}
+\end{enumerate}
+
+債權（權利本體）-\textgreater{} \textbf{請求權}（衍生性權利）
+
+四種不同\textbf{請求權}類型：
+
+【國家是債權人】
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  稅款的給付請求
+\item
+  責任債務（Haftungsschulden）給付請求
+\end{enumerate}
+
+【國家是債務人】
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  \textbf{退給}稅款的給付請求
+
+  \begin{itemize}
+  \tightlist
+  \item
+    有法律上的原因，透過法律的規定
+  \item
+    例如稅捐優惠
+  \end{itemize}
+\item
+  返還稅款請求
+
+  \begin{itemize}
+  \tightlist
+  \item
+    公法上的不當得利
+  \item
+    無法律原因的不當得利返還
+  \end{itemize}
+\end{enumerate}
+
+退給 vs.~返還：
+構成要件不同！舉證責任不同！
+
+退給稅款要件事實應由納稅義務人證明。
+
+返還稅款，是基於稅捐的同一事實，要由稽徵機關負擔擧證責任：
+
+\begin{itemize}
+\tightlist
+\item
+  納稅義務人說我只應該繳50塊！稽徵機關要舉證説明稅額應爲100塊，否則就只能徵收50塊
+\end{itemize}
+
+\hypertarget{ux7a05ux6b3eux7d66ux4ed8ux8acbux6c42}{%
+\subsection{稅款給付請求}\label{ux7a05ux6b3eux7d66ux4ed8ux8acbux6c42}}
+
+稅款給付
+
+\begin{itemize}
+\tightlist
+\item
+  主給付：稅捐本金
+\item
+  附帶給付
+
+  \begin{itemize}
+  \tightlist
+  \item
+    稅捐稽徵法49第一項，准用稅款主給付請求的規範
+  \item
+    附帶給付的内容：滯納金、利息、滯報金、怠報金及罰鍰等
+  \item
+    不利益的行政處分：滯納金、利息
+  \item
+    裁罰性的行政處分：滯報金、怠報金及罰鍰
+  \end{itemize}
+\end{itemize}
+
+\begin{quote}
+第 20 條
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  依稅法規定逾期繳納稅捐應加徵滯納金者，每逾三日按滯納數額加徵百分之一滯納金；逾三十日仍未繳納者，移送強制執行。但因不可抗力或不可歸責於納稅義務人之事由，致不能依第二十六條、第二十六條之一規定期間申請延期或分期繳納稅捐者，得於其原因消滅後十日內，提出具體證明，向稅捐稽徵機關申請回復原狀並同時補行申請延期或分期繳納，經核准者，免予加徵滯納金。
+\item
+  中華民國一百十年十一月三十日修正之本條文施行時，欠繳應納稅捐且尚未逾計徵滯納金期間者，適用修正後之規定。
+\end{enumerate}
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  滯納金（稅捐稽徵法20條）
+
+  \begin{itemize}
+  \item
+    怠於繳納，應繳未繳，遲延利息的類似，跟利息是互斥的
+  \item
+    前30天算滯納金，最多10\%（稅捐稽徵法20條第1項第1句第1分句，前年修法的）
+  \item
+    是一種類似殆金的概念，是一種不利益，但不是處罰，不是裁罰，沒有制裁的意義
+  \item
+    納稅者權利保護法第7條第3項第2句，後半段【稅捐稽徵法修正，但是納保法沒有修正；一旦該當\textbf{租稅規避}，滯納金以15\%計】
+  \item
+    \begin{quote}
+    第 7 條（稅捐規避）
+
+    \begin{enumerate}
+    \def\labelenumii{\arabic{enumii}.}
+    \tightlist
+    \item
+    \item
+    \item
+      納稅者基於獲得租稅利益，違背稅法之立法目的，濫用法律形式，以非常規交易規避租稅構成要件之該當，以達成與交易常規相當之經濟效果，為\textbf{租稅規避}。稅捐稽徵機關仍根據與實質上經濟利益相當之法律形式，成立租稅上請求權，並加徵滯納金及利息。
+    \item
+      前項租稅規避及第二項課徵租稅構成要件事實之認定，稅捐稽徵機關就其事實有舉證之責任。
+    \item
+    \item
+    \item
+      第三項之滯納金，按應補繳稅款\textbf{百分之十五}計算；並自該應補繳稅款原應繳納期限屆滿之次日起，至填發補繳稅款繳納通知書之日止，按補繳稅款，依各年度一月一日郵政儲金一年期定期儲金固定利率，按日加計利息，一併徵收。
+    \end{enumerate}
+    \end{quote}
+  \item
+    一般而言，滯納金和本金會一起被提起稅捐救濟程序
+  \end{itemize}
+\item
+  利息
+
+  \begin{itemize}
+  \item
+    有滯納金就沒有利息
+  \item
+    繳完滯納金之後才開始算利息
+  \item
+    前30天算滯納，第31天開始算利息（法定利率）
+  \item
+    納保法第7條第7項第2分句（租稅規避者）
+  \item
+    \begin{quote}
+    \begin{enumerate}
+    \def\labelenumii{\arabic{enumii}.}
+    \setcounter{enumii}{6}
+    \tightlist
+    \item
+      第三項之滯納金，按應補繳稅款\textbf{百分之十五}計算；並自該應補繳稅款原應繳納期限屆滿之次日起，至填發補繳稅款繳納通知書之日止，按補繳稅款，依各年度一月一日郵政儲金一年期定期儲金固定利率，按日加計利息，一併徵收。
+    \end{enumerate}
+    \end{quote}
+  \end{itemize}
+\item
+  滯報金
+
+  \begin{itemize}
+  \tightlist
+  \item
+    逾越期間之申報
+  \end{itemize}
+\item
+  怠報金
+
+  \begin{itemize}
+  \tightlist
+  \item
+    自始至終沒有申報
+  \end{itemize}
+\item
+  罰鍰
+
+  \begin{itemize}
+  \tightlist
+  \item
+    行爲罰
+  \item
+    漏稅罰
+  \item
+    \#503 法治國原則導出之\textbf{一行爲不二罰}，針對同一個行爲的非難，不能重複非難
+
+    \begin{itemize}
+    \tightlist
+    \item
+      重複非難禁止（德文：重複評價禁止）
+    \item
+      一行爲不二次非難
+    \item
+      一個人的同一行爲不被國家進行裁罰性質的重複非難
+    \item
+      不對構成要件與法律結果進行重複非難
+    \item
+      不在不同法領域重複非難
+    \end{itemize}
+  \item
+    滯納金（不利益，不具裁罰屬性）與罰鍰，并不受\textbf{一行爲不二罰}之規範
+  \end{itemize}
+\end{enumerate}
+
+特別公課的附加：
+
+\begin{itemize}
+\tightlist
+\item
+  不具裁罰性質，不需要主觀可歸責的事由，不考慮可歸責性
+\item
+  ``不知法律''不構成免除其公課負擔之事由
+\end{itemize}
+
+\hypertarget{w02_0228}{%
+\chapter{W02\_0228}\label{w02_0228}}
+
+連假
+
+\hypertarget{w03_0307}{%
+\chapter{W03\_0307}\label{w03_0307}}
+
+續上周
+
+區分行政處分具有裁罰屬性 之
+
+主觀上無可非難之事由
+
+同一份函令包含數個行政處分之行爲，息息相關，數額計算之依據
+
+補稅的行政處分
+（應申報未申報，按其所漏稅額，計算）漏稅罰罰鍰處分
+
+納稅人在救濟時若分開提起行政救濟，若只針對罰鍰提起救濟，則法官不對已具有形式存續力的補稅處分進行審查，僅對後者漏稅罰罰鍰處分部分進行審查。
+
+法律要件該當時，即已經發生法律上權利義務關係，行政處分只是確認【已經形成的】法律上權利義務關係
+
+區分
+
+\begin{itemize}
+\tightlist
+\item
+  權力關係說
+
+  \begin{itemize}
+  \tightlist
+  \item
+    法律槼範給行政機關一個行政權限，而形成與人民之間的權利義務關係
+  \item
+    課稅處分形成國家與人民之間之權利義務關係
+  \item
+    警察法
+
+    \begin{itemize}
+    \tightlist
+    \item
+      警察在個案中，選擇何種法律效果（例如，是否攔查闖紅燈的行爲人，警察斟酌個別情況決定是否）
+    \item
+      便宜原則，讓行政機關在個案，即使法律要件該當時，仍然可以決定，是否、如何形成與人民之間之權利義務關係
+    \item
+      決定裁量權限
+    \end{itemize}
+  \end{itemize}
+\item
+  法律關係說
+
+  \begin{itemize}
+  \tightlist
+  \item
+    法律要件該當時，即已經發生法律上權利義務關係，行政處分只是確認【已經形成的】法律上權利義務關係
+  \item
+    課稅處分只是作爲確認（兼具命給付）性質之行政處分
+  \end{itemize}
+\end{itemize}
+
+隨著德國魏瑪憲法，以稅捐為内容的權利義務關係采納【法律關係說】，這種看法，慢慢對日本、台灣的影響
+台灣憲法19，依法課稅原則，以法律關係說作爲憲法上的依據，行政機關并不享有裁量權限，在法律構成要件滿足時，必作成課稅處分
+沒有裁量與否的空間
+執行的誡命
+行政機關不得偏離稅法的規範
+偏離禁止（不准偏離軌道）
+
+行政機關具有依據對於依法形成的稅捐債權債務關係而做成課稅處分之義務
+
+但這并非法治國家之共同看法
+
+美國就容許行政機關具有裁量空間，可以選擇，對於依法形成的稅捐債權債務關係，是否、如何做成課稅處分
+
+稅捐是一種法定之債，具有各項構成要件之要素、法律效果，都是依據法律明訂。
+
+四項構成要件
+
+\begin{itemize}
+\tightlist
+\item
+  稅捐主體
+\item
+  稅捐客體
+\item
+  稅基
+\item
+  稅率
+\end{itemize}
+
+各個構成要件散佈在各稅法，去做規範
+
+立法者沒有按照體系、條文排列沒有順序！
+
+稅法在立法時間較爲後面，立法技術極爲拙劣、讓稅法變得難以學習的背景
+
+法條是散的，分散式立法不像民法各論（民法的條文規範有邏輯、有順序）、刑法分則
+
+老師的工作是要把支離破碎的稅法，通過體系的重新整理，讓同學有邏輯地學習
+
+稅法應該要長得比較好看一點，應該要有一部統一的稅法典，去厘清各稅目之間額關聯（例如遺產與贈與稅之間之關係）
+
+同學可以做一項工作
+
+將各稅法（所得稅、遺產及贈與稅、營業稅）
+針對其中所規範之構成要件
+將所有的稅法的法條去做重新的排列組合
+
+各稅之該當，應符合對應之課稅構成要件
+
+搞清楚稅捐債權債務關係的請求權基礎
+
+遺產及贈與稅，以遺產稅爲例
+
+\begin{itemize}
+\tightlist
+\item
+  稅捐主體 （原則上應該是拿到遺產的人）
+\item
+  稅捐客體（你拿到的遺產）
+\item
+  稅基（遺產之數額，量化才能算數額，要腦筋清楚，要辨別哪些是應稅）
+\item
+  稅率（課徵之比例）
+\end{itemize}
+
+贈與稅
+
+\begin{itemize}
+\tightlist
+\item
+  稅捐主體 （原則上應該是拿到錢的人，才有ability to pay嘛！應該要以受贈人為納稅義務人，但是法律不是這樣規定）
+\item
+  稅捐客體（你拿到的遺產）
+\item
+  稅基（遺產之數額，量化才能算數額，要腦筋清楚，要辨別哪些是應稅）
+\item
+  稅率（課徵之比例）
+\end{itemize}
+
+土地稅（財產稅）
+
+\begin{itemize}
+\tightlist
+\item
+  稅捐主體 （擁有土地的所有人）
+\item
+  稅捐客體（土地）
+\item
+  稅基（土地的價值）
+\item
+  稅率（課徵之比例）
+\end{itemize}
+
+營業稅
+
+\begin{itemize}
+\tightlist
+\item
+  稅捐主體 （銷售人）
+\item
+  稅捐客體（銷售）
+\item
+  稅基（貨物、勞務之銷售額）
+\item
+  稅率（課徵之比例）
+\end{itemize}
+
+稅捐法律效果
+
+\begin{itemize}
+\tightlist
+\item
+  稅額 = 稅基 x 稅率
+\item
+  繳稅期間
+\item
+  稽徵程序
+\item
+  時效
+\end{itemize}
+
+稅捐優惠是反面的構成要件（構成要件或法律效果的反面的形態），給與納稅義務人在本來已經該當的構成要件之中，例外地加以排除
+
+\begin{itemize}
+\tightlist
+\item
+  稅捐主體之 免除（100年前軍教人員薪水免稅（主+客））
+\item
+  稅捐客體之 免除（變動所得，出去打魚，一半課稅、一半免稅）
+\item
+  稅基之 減、免
+\item
+  稅率之 減、免（優惠稅率，自用住宅（10\% -\textgreater{} 2\%））
+\item
+  稅額的記存 （暫時不用繳納，條件成就時再繳納）
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://real-estate.get.com.tw/Columns/detail.aspx?no=905141}{土地增值稅} 指結算已發生之增值稅並記在帳上，於下次移轉時一併繳納，故已結算之增值稅部分不再發生累進稅作用。 如：都市更新權利變換關係人取得。
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{ux8cacux4efbux50b5ux52d9ux7684ux7d66ux4ed8ux8acbux6c42}{%
+\section{責任債務的給付請求}\label{ux8cacux4efbux50b5ux52d9ux7684ux7d66ux4ed8ux8acbux6c42}}
+
+責任債務，實務的説法，在立法中未出現過這樣的字眼，
+
+立法的描述：納稅義務人（明明是程序法概念，制定稅法的財政部，分不清實體法、程序法！所以立法的語言中都沒有出現 ``稅捐債務人'' 這樣的實體法概念）
+
+學理上：稅捐債務人（根據稅法而形成的稅捐債權債務關係，實體法概念），從而在稽徵程序中是繳納義務人！（原則上，自己的稅捐債務，自己負擔申報繳納稅款的義務，自己是申報繳納稅款的義務人）
+
+分別實意：
+就源扣繳中有一個，扣繳義務人（不是稅法上應該負擔權利義務之主體，只是在程序上被拉進來作爲行爲義務之主體），以納稅義務人之名義
+
+老師在臺大教書，臺大支付老師薪資100塊，老師是稅捐債務人，臺大是扣繳義務人（第三人的身份被拉近稅捐繳納的程序之中，非常的倒霉）
+臺大不會全額支付給老師100塊，
+在所得的源頭，就幫國家
+
+非常倒霉！做好沒賞，打破要賠
+
+沒有幫忙扣繳足額，則負擔補繳稅款的責任，這就是責任債務之概念
+
+扣繳義務人，是以第二順位的責任債務人的身份而負擔補繳稅款的責任債務
+
+稅捐債權人（財政收支劃分法中規範）
+
+\hypertarget{ux88dcux5145}{%
+\section{1435 補充}\label{ux88dcux5145}}
+
+文化背景
+
+\begin{quote}
+看清朝的宮廷戯，徵稅，徵銀兩，法律規定收10兩，爲什麽收11兩？因爲火耗！熔掉碎銀兩，重新鑄的損耗，就跟人民多收
+
+大陸，包稅制！
+\end{quote}
+
+如果還沒有像美國一樣的文化基礎，美國三權分立，行政有行政的權限，（在稅捐事務上有一定的裁量權限）
+
+沒有辦法搬來一部分美國的法律制度。
+
+美國的大法官，民選，台灣的法官是國家考試，如果也要民選，那麽要選法官就像選議員、首長一樣，要經營自己的選區XD
+
+老師相信制度，但是制度要全面配套文化環境
+
+若是退到50年前？要是給行政機關有裁量權限，會變成什麽樣子！
+沒有健保時醫生排病床要紅包欸
+
+美國的行政機關，有權限，不僅是權限，也是他的義務
+
+法律規範密度不足，所以要看【法令匯編】
+
+法律人的習慣是最低限度一定看法律，怎麽會解釋函令治國、解釋函令課稅？
+
+立法委員的法律能力不足
+
+實務上的具體操作，一定要看解釋函令，連老師也常常會不知道：欸有這樣的解釋函令欸！老師成大的學生，稅局的工作人員，只熟悉營所，不熟悉綜所！
+
+如果不要求法律人用原理原則去操作，那就會變成看函令就好
+
+30年以前，教稅法，不是叫法律人，而是叫經濟、會計\ldots{}
+
+稅捐主體，稅法的權利義務的歸屬主體！
+國際稅法當中，誰是稅捐主體？PE常設機構是稅捐主體。
+
+法律人自己不認真把稅法當作法律，那麽別人就會來幫忙你詮釋！
+
+稅法變成這樣，是因爲法律人不認真對待稅法，自己不在乎！
+
+房價爲什麽那麽高，炒地皮不用負擔那麽多稅！
+
+老師讀書的時候，信義區只有一棟高樓，臺北市政府，我也知道買地皮可以賺錢！但是\ldots{}
+
+稅捐正義！有所得不課稅，還講什麽爭議，非常可笑的事情。
+
+証交稅，怎麽可能代替，証所稅？！
+
+大法官解釋，証交稅代証所稅，是因爲立法理由這樣寫，爲什麽立法理由寫這麽離譜，因爲\ldots{}
+
+爲了証所稅，犧牲了2個財政部長!
+
+要証所稅，股市跌下來，就嚇到了，
+
+我要是財政部長，誰在那邊炒作，就立馬把你抓過來\textasciitilde{}
+
+香港本來的立足點就跟台灣不一樣
+
+這個國家對於自己的立足點、定位不清楚。
+
+稅法本來不該這邊麽丑！
+
+\begin{quote}
+島上的猴子都1只眼睛，就會覺得1眼是正常的，去其他地方看到2只眼睛的猴子，還會覺得2只眼睛是奇怪的。
+\end{quote}
+
+稅法是很重要的分配正義的起點。
+
+國家不事生產，不是生產的主體，國家是分配組織，不應該期待國家10塊錢生出100塊，頂多是10塊錢出來2\textasciitilde10塊，看組織的效率、貪腐？
+
+稅收分配 關係到國家的收跟支\ldots{}
+形式合法性，實質正當性（量能，有賺錢就交稅，有虧錢就扣除）
+
+老師講話那麽憤慨，其實是恨自己沒有多個分身，去將稅捐正義、分配正義的重要性（QQ
+
+不是所有東西都是市場經濟可以做得到。
+
+老師希望稅法不是只有大學生來上，
+
+因爲政治經濟的因素而不能上到大學
+
+香港，膠囊的公寓，人還有什麽\ldots.這不是一個人該被對待的方式，我的天，這什麽世界
+
+（T\^{}T
+
+請各位不要輕易放棄稅法，講分配正義，沒有稅法不行
+
+\hypertarget{ux56deux5230ux8cacux4efbux50b5ux52d9ux4eba}{%
+\section{回到責任債務人}\label{ux56deux5230ux8cacux4efbux50b5ux52d9ux4eba}}
+
+\begin{verbatim}
+所得稅法94
+
+第 94 條
+扣繳義務人於扣繳稅款時，應隨時通知納稅義務人，並依第九十二條之規定，填具扣繳憑單，發給納稅義務人。如原扣稅額與稽徵機關核定稅額不符時，扣繳義務人於繳納稅款後，應將溢扣之款，退還納稅義務人。不足之數，由扣繳義務人補繳，但扣繳義務人得向納稅義務人追償之。
+\end{verbatim}
+
+\textbf{不足之數，由扣繳義務人補繳}
+【責任債務之概念】
+
+\textbf{但扣繳義務人得向納稅義務人追償之}
+【看起來好像回復正義】，但是，
+追繳不用錢嗎？追繳一定追得到嗎？
+
+納稅義務人可能死了，可能不給錢，追償可能要打官司，告納稅義務人，要成本呢
+
+看這種條文看起來火大
+
+中科院
+
+退伍的軍人，做研究，薪水蠻好的
+
+中科院主管單位認爲，比照軍人免稅（其實退伍之後就不是軍人了，是雇傭契約），中科院以爲免稅，沒有扣繳，83年-85年，上萬的人沒有扣繳，財政部突然發現，這些人怎麽長達5年全部沒有繳稅？
+總共補繳7E，再加罰三倍21E應扣未扣
+
+114
+
+\begin{verbatim}
+第 114 條
+
+扣繳義務人如有下列情事之一者，分別依各該款規定處罰：
+一、扣繳義務人未依第八十八條規定扣繳稅款者，除限期責令補繳應扣未扣或短扣之稅款及補報扣繳憑單外，並按應扣未扣或短扣之稅額處一倍以下之罰鍰；其未於限期內補繳應扣未扣或短扣之稅款，或不按實補報扣繳憑單者，應按應扣未扣或短扣之稅額處三倍以下之罰鍰。
+二、扣繳義務人已依本法扣繳稅款，而未依第九十二條規定之期限按實填報或填發扣繳憑單者，除限期責令補報或填發外，應按扣繳稅額處百分之二十之罰鍰。但最高不得超過二萬元，最低不得少於一千五百元；逾期自動申報或填發者，減半處罰。經稽徵機關限期責令補報或填發扣繳憑單，扣繳義務人未依限按實補報或填發者，應按扣繳稅額處三倍以下之罰鍰。但最高不得超過四萬五千元，最低不得少於三千元。
+三、扣繳義務人逾第九十二條規定期限繳納所扣稅款者，每逾二日加徵百分之一滯納金。
+\end{verbatim}
+
+會計、出納單位
+
+釋字第673 號 居然説這兩個都合憲欸
+
+人家是沒做好沒錯，但要他補繳、要賠？！
+
+\begin{verbatim}
+稅捐稽徵法 第 42 條
+
+代徵人或扣繳義務人以詐術或其他不正當方法匿報、短報、短徵或不為代徵或扣繳稅捐者，處五年以下有期徒刑、拘役或科或併科新臺幣六萬元以下罰金。
+代徵人或扣繳義務人侵占已代繳或已扣繳之稅捐者，亦同。
+\end{verbatim}
+
+請問這本來是誰的公法義務啊？太誇張！（@\#￥！\&
+
+應該是納稅義務人首先負擔補繳責任！
+
+德國：連帶債務人
+
+責任債務應該的特徵，理論上
+
+\begin{itemize}
+\tightlist
+\item
+  補充性：后順位被追償
+\item
+  從屬性：責任債務的範圍不大於主債務的範圍
+\end{itemize}
+
+但是法律明文規定：遺囑執行人、遺產管理人
+
+遺產稅 6（1）反客爲主？！
+
+\begin{verbatim}
+第 6 條
+遺產稅之納稅義務人如左：
+一、有遺囑執行人者，為遺囑執行人。
+二、無遺囑執行人者，為繼承人及受遺贈人。
+三、無遺囑執行人及繼承人者，為依法選定遺產管理人。
+其應選定遺產管理人，於死亡發生之日起六個月內未經選定呈報法院者，或因特定原因不能選定者，稽徵機關得依非訟事件法之規定，申請法院指定遺產管理人。
+\end{verbatim}
+
+遺囑執行人、遺產管理人，只是職務管理人，變成遺產稅的納稅義務人？！
+其實是應盡一個職務管理人的責任，要先交完稅，再把剩下的遺產分配給繼承人及受遺贈人
+
+應該還是要以繼承人及受遺贈人，為
+后順位才是以遺囑執行人、遺產管理人，作爲責任債務人的身份而負擔這樣的不利益
+
+\hypertarget{ux4e0bux5468ux8b1b-ux6ea2ux7e73ux7a05ux6b3eux8fd4ux9084ux7a05ux6b3eux8acbux6c42-vs.-ux9000ux7d66ux7a05ux6b3eux7684ux7d66ux4ed8ux8acbux6c42}{%
+\section{下周講 溢繳稅款返還稅款請求 vs.~退給稅款的給付請求}\label{ux4e0bux5468ux8b1b-ux6ea2ux7e73ux7a05ux6b3eux8fd4ux9084ux7a05ux6b3eux8acbux6c42-vs.-ux9000ux7d66ux7a05ux6b3eux7684ux7d66ux4ed8ux8acbux6c42}}
+
+\hypertarget{w04_0314-ux6ea2ux7e73ux7a05ux6b3eux8fd4ux9084ux8acbux6c42-vs.-ux9000ux7d66ux7a05ux6b3eux7684ux7d66ux4ed8ux8acbux6c42}{%
+\chapter{W04\_0314 溢繳稅款返還請求 vs.~退給稅款的給付請求}\label{w04_0314-ux6ea2ux7e73ux7a05ux6b3eux8fd4ux9084ux8acbux6c42-vs.-ux9000ux7d66ux7a05ux6b3eux7684ux7d66ux4ed8ux8acbux6c42}}
+
+\hypertarget{ux9000ux7d66ux7a05ux6b3e}{%
+\section{退給稅款}\label{ux9000ux7d66ux7a05ux6b3e}}
+
+一定有法律槼範作爲依據
+
+\hypertarget{ux7b2cux4e00ux7a2eux985eux578b}{%
+\subsection{第一種類型：}\label{ux7b2cux4e00ux7a2eux985eux578b}}
+
+暫繳、扣繳稅款
+
+國外（所得來源國）稅款扣抵（稅籍國）國内稅款
+
+\hypertarget{ux7b2cux4e8cux7a2eux7a05ux6350ux512aux60e0ux7684ux9000ux7d66ux7a05ux6b3e}{%
+\subsection{第二種：稅捐優惠的退給稅款}\label{ux7b2cux4e8cux7a2eux7a05ux6350ux512aux60e0ux7684ux9000ux7d66ux7a05ux6b3e}}
+
+基於某種政策目的（經濟、文化、教育、慈善，
+給予納稅義務人的稅捐優惠
+
+在一些情況，不以稅為名，各領域的行政法（實質稅法，不是出現在稅法中），提供相對應的稅捐優惠、鼓勵人們選擇某種行爲
+
+環境保護領域，個人或企業做出政策所鼓勵的行爲，
+
+稅法本身也有提供稅捐優惠，最典型的，自用住宅的重購退稅，在我們的房地分立的時代（105年以前），在房屋中適用重購退稅，所得稅法17-2
+
+土地，自用住宅重購退，土地稅法35
+
+105之後，改成房地合一，所得稅法14-8第一項的規定
+
+\begin{quote}
+hw 重購退稅105年以前房地分立之下以及 105年以後房地合一的重購退稅，兩軌，整理法規範依據，將其構成要件、法律效果之解析，比較、對照【何謂自住】
+這是依法課稅非常重要的
+先不管立法者爲什麽要分立這麽多條規定
+先不談違反平等原則的問題（同一個概念之下的土地財產交易所得，做區別的對待，盈餘虧損不能互相扣抵，稅率
+
+要不要交這個功課，悉聽尊便，但是，考試的時候，期末考會考的\textasciitilde{}
+這個作業，其實本來應該要立法者來做的，但是立法者不僅沒有整合對照，反而分開兩軌
+\end{quote}
+
+重購退稅，原本是社會政策，政策目的，鼓勵人們換房子，從小換到大，鼓勵人們改善自己的生活環境
+
+政策目的是否符合社會現況？房地價格急速飆漲，往往換來的并非更好的生活環境，買了新的，極可能居住面積只能更狹小。
+
+\begin{quote}
+自主的事實要則麽證明？
+要不要設立戶籍？
+不需要設立，因爲戶籍只是行政管理措施
+那麽到底要證明是自主？要用經濟實質的角度去證明？沒有適合的方法？每天去盯梢？警察天天去查戶口？
+徵納雙方之間就``是否具居住之事實''而產生爭執
+
+納稅義務人原則上要去證明``自主的事實''，以及滿足相關的期間的規定，而主張因構成要件之該當，適用重購退稅，而在申報是，申報自繳稅額爲零【本質上是退給稅款】
+\end{quote}
+
+\hypertarget{ux4e0dux7576ux5f97ux5229ux7684ux7a05ux6b3eux8fd4ux9084}{%
+\section{不當得利的稅款返還}\label{ux4e0dux7576ux5f97ux5229ux7684ux7a05ux6b3eux8fd4ux9084}}
+
+有單一的法律規定！
+
+\begin{quote}
+稅捐稽徵法 第 28 條
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  因適用法令、認定事實、計算或其他原因之錯誤，致溢繳稅款者，納稅義務人得自繳納之日起十年內提出具體證明，申請退還；屆期未申請者，不得再行申請。但因可歸責於政府機關之錯誤，致溢繳稅款者，其退稅請求權自繳納之日起十五年間不行使而消滅。
+\item
+  \textbf{稅捐稽徵機關於前項規定期間內知有錯誤原因者，應自知有錯誤原因之日起二年內查明退還。}
+\item
+  納稅義務人對核定稅捐處分不服，依法提起行政救濟，經行政法院實體判決確定者，不適用前二項規定。
+\item
+  第一項規定溢繳之稅款，納稅義務人以現金繳納者，應自其繳納該項稅款之日起，至填發收入退還書或國庫支票之日止，按溢繳之稅額，依各年度一月一日郵政儲金一年期定期儲金固定利率，按日加計利息，一併退還。
+\item
+  中華民國一百十年十一月三十日修正之本條文施行時，因修正施行前第一項事由致溢繳稅款，尚未逾五年之申請退還期間者，適用修正施行後之第一項本文規定；因修正施行前第二項事由致溢繳稅款者，應自修正施行之日起十五年內申請退還。
+\item
+  中華民國一百十年十一月三十日修正之本條文施行前，因修正施行前第一項或第二項事由致溢繳稅款者，於修正施行後申請退還，或於修正施行前已申請尚未退還或已退還尚未確定案件，適用第四項規定加計利息一併退還。但修正施行前之規定有利於納稅義務人者，適用修正施行前之規定。
+\item
+  行為人明知無納稅義務，違反稅法或其他法律規定所繳納之款項，不得依第一項規定請求返還。
+\end{enumerate}
+\end{quote}
+
+法條的用字用了非常抽象的【退稅】（很容易形成誤導），應該叫做【溢繳稅款的返還】
+
+構成要件：
+
+區別：是否因可歸責於政府機關之錯誤
+
+消滅時效（期間）的差異！
+
+起算日：繳納之日
+期間： 10年v.s. 15年（若錯誤來自於我們的政府機關，則期間延長至15年）
+
+【可歸責於（我們的）政府機關】之反面，并非【可歸責於納稅義務人】
+
+e.g.~第三人：外國機關
+
+錯誤類型：
+
+\begin{itemize}
+\tightlist
+\item
+  適用法令之錯誤
+\item
+  認定事實之錯誤
+\item
+  計算或其他原因之錯誤
+\end{itemize}
+
+110年12月30修正，將各項錯誤都寫上去，是想表示，不管什麽原因的錯誤，只有這3種類型
+
+有差額（課稅處分所載之稅額，大於依稅法規定，滿足構成要件所形成（發生）之稅捐債務數額），就代表【溢繳稅款】的情形
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{28條第3項}
+\item
+  納稅義務人對核定稅捐處分不服，依法提起行政救濟，\textbf{經行政法院實體判決確定}者，不適用前二項規定。
+\end{itemize}
+
+統一處理：（舊法時）納稅義務人無視行政法院裁判既判力，而提起溢繳稅款的返還的請求
+
+\begin{itemize}
+\tightlist
+\item
+  【溢繳稅款的返還】是否有程序法上之意義？
+\item
+  行政處分原本是有救濟可能性，納稅義務人應該依據行政程序而進行行政救濟，
+\item
+  在舊法時代，納稅義務人一再無視行政處分之形式存續力、既判例，而提起【溢繳稅款的返還請求】
+\item
+  新法：納稅義務人對核定稅捐處分不服，依法提起行政救濟，\textbf{經行政法院【實體判決】確定}（行政法院裁判既判力）者，【排除】【溢繳稅款的返還請求】
+\end{itemize}
+
+仍然可能提起【溢繳稅款的返還請求】的可能性：
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  納稅義務人在前程序，行政處分做成之後，沒有提起行政救濟。
+\item
+  就算經由行政救濟程序，只要沒有進入行政法院的行政訴訟【e.g.提起訴願，被駁回】
+\item
+  納稅義務人已提起行政訴訟，但是行政法院只是（形式上的）裁定駁回（e.g.預約期間、欠費）
+\end{enumerate}
+
+即，一旦不具【行政法院裁判既判力】，即可提起【溢繳稅款的返還請求】
+
+與 \textbf{行政程序法128條，程序再開【3個月内】} 不合
+
+而有些稅捐之徵收，在我國沒有行政處分，e.g.~娛樂稅（代徵）契稅（銷花）
+以往沒有救濟的管道。即28條第1項，原始的適用情形。
+
+整理
+
+\begin{itemize}
+\tightlist
+\item
+  【溢繳稅款的返還請求】的法律性質
+
+  \begin{itemize}
+  \tightlist
+  \item
+    實體法：公法性質的不當得利
+  \item
+    程序法：特殊的救濟程序（有別於行政程序法128行政程序再開的），讓納稅義務人可以重啓救濟程序的可能
+
+    \begin{itemize}
+    \tightlist
+    \item
+      理由：稅捐稽徵屬於大量行政事件，有可能出錯
+    \end{itemize}
+  \end{itemize}
+\item
+  有稅捐之行政處分：
+
+  \begin{itemize}
+  \tightlist
+  \item
+    行政處分形式存續力+實體判決既判力：28第3項，不得提起【溢繳稅款的返還請求】
+  \item
+    行政處分形式存續力，無實體判決：得提起【溢繳稅款的返還請求】
+  \end{itemize}
+\item
+  無行政處分：
+
+  \begin{itemize}
+  \tightlist
+  \item
+    得依28條第1項提起【溢繳稅款的返還請求】
+  \end{itemize}
+\end{itemize}
+
+【28條第7項】
+
+行為人明知無納稅義務，違反稅法或其他法律規定所繳納之款項，不得依第一項規定請求返還。
+
+對照民法上明知自己沒有給付的義務（180），不當得利之排除【不當得利是整個法秩序中，所有的調整權利義務之最後一項機制】
+
+以前沒有【28條第7項】時，要類推適用民法
+
+e.g.~納稅義務人幫助其他納稅義務人逃漏稅捐：開假發票，變成別人的加成本，虛報進項稅額。【本質上是幫助犯，但是稅捐的體系中幾乎沒有針對幫助犯的規範】
+
+組織型的逃漏稅捐的情形，旋轉木馬的形式，拿到最多銷商稅額的公司，倒閉
+
+\begin{quote}
+德國：旋轉木馬的把戲，如果稽徵機關效率高，就不太容易發生
+\end{quote}
+
+以前針對這個是用【誠信原則】，現在就用法律依據，法律明文規定，
+
+\hypertarget{ux7a05ux6350ux7a3dux5fb5ux6cd5ux662fux6574ux500bux7a05ux6350ux6cd5ux5236ux4e2dux7684ux91cdux4e2dux4e4bux91cd-0314-1443}{%
+\chapter{稅捐稽徵法【是整個稅捐法制中的重中之重】 0314-1443}\label{ux7a05ux6350ux7a3dux5fb5ux6cd5ux662fux6574ux500bux7a05ux6350ux6cd5ux5236ux4e2dux7684ux91cdux4e2dux4e4bux91cd-0314-1443}}
+
+稅捐稽徵：確認（以法律所形成之）稅捐債務關係
+
+\hypertarget{ux4f9dux6cd5ux8ab2ux7a05ux7684ux5185ux6db5ux5305ux542bux7a0bux5e8fux5408ux6cd5ux6027}{%
+\section{\texorpdfstring{\textbf{依法課稅}（的内涵包含程序合法性）}{依法課稅（的内涵包含程序合法性）}}\label{ux4f9dux6cd5ux8ab2ux7a05ux7684ux5185ux6db5ux5305ux542bux7a0bux5e8fux5408ux6cd5ux6027}}
+
+\begin{itemize}
+\tightlist
+\item
+  課稅要件（稅捐債務）法定
+\item
+  稽徵程序法定
+\end{itemize}
+
+對於稅捐稽徵機關：【偏離禁止、適用誡命】
+一定要做，沒有可以讓他不做的空間
+
+稅捐稽徵法：是一種手段法
+
+\hypertarget{ux6bd4ux4f8bux539fux5247}{%
+\subsection{比例原則}\label{ux6bd4ux4f8bux539fux5247}}
+
+手段不能逾越目的、不能逾越\textbf{比例原則}，不能只是爲了課稅而過分干預人民權利
+
+課稅手段不能逾越課稅目的，比例原則的思考，也是重要的憲法原則，但是不太有功能！
+比例原則，在一般的干預行政法體系中，是最重要的憲法原則。
+
+e.g.~警察法，
+
+稅的本質，已經肯認了國家對於財產權的干預，但是禁止過度的干預【絞殺稅、寓禁於徵禁止（法治國家不允許這種手段）】，比例原則的適用限度僅限於此，沒有其他具體的適用情形，沒辦法有更好的違憲審查的作用
+
+排放戴奧辛、毒品販賣、人口、强制【禁止】
+v.s
+烟草消費【開放但不鼓勵】
+
+稅捐本來是中立的，如果要完全禁止，就不能用稅！
+
+但是稅捐、公課手段可以有政策目的，而有較重的稅捐負擔或稅捐優惠
+
+\begin{itemize}
+\tightlist
+\item
+  【禁止】不能用稅的手段來實現，要用刑事手段
+\item
+  【開放但是不鼓勵】從而是用比較高的稅負，用經濟手段誘導人們的行爲
+\end{itemize}
+
+\hypertarget{ux5e73ux7b49ux539fux5247}{%
+\subsection{平等原則}\label{ux5e73ux7b49ux539fux5247}}
+
+相比起來，\textbf{平等原則}是更重要的憲法原則！
+
+同樣是納稅義務人，爲啥甲和乙的稅捐負擔不同。
+
+量能課稅【更具體化\textbf{平等原則}】
+
+平等原則是以量能課稅（及各項子原則）而具體化，這樣才能實際操作
+
+維繫個人生存需求
+
+\hypertarget{ux7a05ux6350ux7a3dux5fb5ux7a0bux5e8fux4e4bux6cd5ux5f8bux69fcux7bc4}{%
+\section{稅捐稽徵程序之法律槼範}\label{ux7a05ux6350ux7a3dux5fb5ux7a0bux5e8fux4e4bux6cd5ux5f8bux69fcux7bc4}}
+
+課稅行政處分是一個確認兼命給付之行政處分，可以作爲行政執行之依據
+
+稅捐稽徵程序，在我國，呈現分立的立法，分散式立法，
+
+\begin{itemize}
+\tightlist
+\item
+  稅捐稽徵法（原則性規範立法較早）
+\item
+  各稅法中關於稽徵程序之規定
+\item
+  行政程序法（較晚，變成行政程序的普通法，補充性的法律規定）
+\item
+  納稅者權利保護法（以納稅者權利保護爲名）
+\end{itemize}
+
+極其分散式的立法
+
+\begin{quote}
+以前行政程序法還沒制定的時候，沒有行政程序法可以念，只能以稅捐稽徵法為例
+\end{quote}
+
+集中式立法比起分散式立法更能夠進行體系上的整理、對照
+
+簡單來講，這幾個法律（同位階的）的適用先後順序
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  納稅者權利保護法，優先規定
+\item
+  各稅法中關於稽徵程序之規定
+\item
+  稅捐稽徵法
+\item
+  行政程序法（補充稅捐稽徵法不足之處，e.g.程序重開）
+\end{enumerate}
+
+\begin{quote}
+\begin{itemize}
+\tightlist
+\item
+  特別法由於普通法
+\item
+  後法優於先法
+\item
+  後法的一辦法，沒有由於先法的特別法，除非有明文規定（e.g.28第7項）
+\end{itemize}
+\end{quote}
+
+\hypertarget{ux4e0bux79aeux62dcux518dux7e7cux7e8cux8aacux660eux6211ux5011ux7684ux7a05ux6350ux7a3dux5fb5ux7a0bux5e8fux898fux7bc4ux771fux7684ux662fux721bux5230ux7206ux721bux5230ux4e0dux884cxd}{%
+\section{下禮拜再繼續説明，我們的稅捐稽徵程序規範真的是爛\ldots 到\ldots 爆\ldots 爛到不行（XD}\label{ux4e0bux79aeux62dcux518dux7e7cux7e8cux8aacux660eux6211ux5011ux7684ux7a05ux6350ux7a3dux5fb5ux7a0bux5e8fux898fux7bc4ux771fux7684ux662fux721bux5230ux7206ux721bux5230ux4e0dux884cxd}}
+
+稅捐稽徵程序的不同類型、三個不同階段
+
+\hypertarget{w05_0321-ux7a05ux6350ux7a3dux5fb5ux7a0bux5e8f}{%
+\chapter{W05\_0321 稅捐稽徵程序}\label{w05_0321-ux7a05ux6350ux7a3dux5fb5ux7a0bux5e8f}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  核課
+\item
+  徵收（保全）
+\item
+  執行（由行政執行署而主管）
+\end{enumerate}
+
+\hypertarget{ux6838ux8ab2ux671fux9593ux6700ux91cdux8981ux7684ux7a0bux5e8fux968eux6bb5}{%
+\section{核課期間（最重要的程序階段）}\label{ux6838ux8ab2ux671fux9593ux6700ux91cdux8981ux7684ux7a0bux5e8fux968eux6bb5}}
+
+SJF
+
+\begin{quote}
+第 21 條
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  稅捐之核課期間，依下列規定：
+  一、依法應由納稅義務人申報繳納之稅捐，已在規定期間內申報，且無故意以詐欺或其他不正當方法逃漏稅捐者，其核課期間為五年。
+  二、依法應由納稅義務人實貼之印花稅，及應由稅捐稽徵機關依稅籍底冊或查得資料核定課徵之稅捐，其核課期間為五年。
+  三、未於規定期間內申報，或故意以詐欺或其他不正當方法逃漏稅捐者，其核課期間為七年。
+\item
+  在前項核課期間內，經另發現應徵之稅捐者，仍應依法補徵或並予處罰；在核課期間內未經發現者，以後不得再補稅處罰。
+\item
+  稅捐之核課期間屆滿時，有下列情形之一者，其時效不完成：
+  一、納稅義務人對核定稅捐處分提起行政救濟尚未終結者，自核定稅捐處分經訴願或行政訴訟撤銷須另為處分確定之日起算一年內。
+  二、因天災、事變或不可抗力之事由致未能作成核定稅捐處分者，自妨礙事由消滅之日起算六個月內。
+\end{enumerate}
+\end{quote}
+
+形成權？ 請求權？
+
+\begin{itemize}
+\item
+  除斥期間說
+
+  \begin{itemize}
+  \tightlist
+  \item
+    權力關係說
+  \end{itemize}
+\item
+  消滅時效說
+
+  \begin{itemize}
+  \tightlist
+  \item
+    法律關係說
+  \item
+    以金錢為内容的給付請求
+  \item
+    債上請求
+  \end{itemize}
+\item
+  【消滅時效說】時效期間
+
+  \begin{itemize}
+  \tightlist
+  \item
+    是否有時效障礙的問題
+  \item
+    是否存在【妨害時效起算、終止】的相關規定？
+  \end{itemize}
+\item
+  納稅義務人未申報
+\item
+  納稅義務人提起救濟、進入行政爭訟救濟程序
+
+  \begin{itemize}
+  \item
+    撤銷廢棄
+  \item
+    行政處分自始不生效力
+  \item
+    【以前沒有時效障礙規定時】納保法21條4項
+  \item
+    比照刑事妥速
+  \item
+    從第一審撤銷發回時起算，總共15年的時間
+  \item
+    解決行政處分做成之後，納稅人對其提起行政救濟程序
+  \item
+    納保法施行細則【第10條第1項第2款】【雖然沒有廢止，但是實際上沒有適用的可能】
+  \item
+    \begin{quote}
+    第 10 條
+
+    \begin{enumerate}
+    \def\labelenumi{\arabic{enumi}.}
+    \tightlist
+    \item
+      本法第二十一條第四項所定自法院作成撤銷或變更裁判之日起逾十五年未能確定其應納稅額者，不得再行核課，該十五年之起算日，依下列規定：
+      一、本法施行後法院最初作成撤銷或變更裁判之日。
+      二、納稅者對於第一審終局裁判提起上訴或抗告，於本法施行後經上級行政法院最初作成廢棄原裁判之日。
+    \item
+      前項所稱作成撤銷、變更或廢棄原裁判之日，指宣示日；其不宣示者，為公告日。
+      本法第二十一條第四項但書所稱不在此限，指不受十五年不得再行核課期間之限制。
+    \end{enumerate}
+    \end{quote}
+  \item
+    【老師評：不倫不類，太荒謬了，越算越久！原本5年變15年】
+  \item
+    【現，110-12-17】SJF第21條3項
+  \item
+    \begin{quote}
+    稅捐之核課期間屆滿時，有下列情形之一者，其時效不完成：
+
+    \begin{itemize}
+    \tightlist
+    \item
+      一、納稅義務人對核定稅捐處分提起行政救濟尚未終結者，自核定稅捐處分經訴願或行政訴訟撤銷須另為處分確定之日起算\textbf{一年}內。
+    \item
+      二、因天災、事變或不可抗力之事由致未能作成核定稅捐處分者，自妨礙事由消滅之日起算\textbf{六個月}內。
+    \end{itemize}
+    \end{quote}
+  \item
+    【終止的不完成】用不完成的方式，當障礙事由被排除，再給他一段額外的，請求權利的時效期間
+  \item
+    現在終於可以在行政訴訟實務上，可以連原處分一并撤銷【+復查+訴願】
+  \end{itemize}
+\item
+  現在終於可以在行政訴訟實務上，可以連原處分一并撤銷【+復查+訴願】
+
+  \begin{itemize}
+  \tightlist
+  \item
+    法院認爲稅捐稽徵機關無理由：
+  \item
+    直接撤銷
+  \item
+    撤銷發回
+
+    \begin{itemize}
+    \tightlist
+    \item
+      行政法院仍要進行事實調查
+
+      \begin{itemize}
+      \tightlist
+      \item
+        又行政機關進行跨境的事實調查
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\item
+  SJF第22條6款
+
+  \begin{itemize}
+  \item
+    \begin{quote}
+    六、稅捐減免所依據處分、事實事後發生變更、不存在或所負擔義務事後未履行，致應補徵或追繳稅款，或其他無法依前五款規定起算核課期間者，自核課權可行使之日起算。
+    \end{quote}
+  \item
+    僅就【稅捐減免、稅捐優惠】
+  \item
+    不包含【納稅義務人未申報】的情形
+  \item
+    應該要有：【自核課權可形式之日起算】
+
+    \begin{itemize}
+    \tightlist
+    \item
+      常常用【解釋函令】的方式
+    \item
+      將起算點，由（22T1X1K）【申報日】（依規定申報者）或【規定申報期間屆滿之翌日】（未在規定期間內申報繳納者）
+    \end{itemize}
+  \end{itemize}
+\item
+  \begin{quote}
+  第 22 條
+  前條第一項核課期間之起算，依下列規定：
+  一、依法應由納稅義務人申報繳納之稅捐，已在規定期間內申報者，自\textbf{申報日}起算。
+  二、依法應由納稅義務人申報繳納之稅捐，未在規定期間內申報繳納者，自\textbf{規定申報期間屆滿之翌日}起算。
+  \end{quote}
+\item
+  依規定申報者
+
+  \begin{itemize}
+  \tightlist
+  \item
+    起算點：【申報日】
+  \item
+    期間：21T1X1K
+  \item
+    5年
+  \end{itemize}
+\item
+  未在規定期間內申報繳納者
+
+  \begin{itemize}
+  \tightlist
+  \item
+    起算點：【規定申報期間屆滿之翌日】
+  \item
+    期間：21T1X3K
+  \item
+    7年
+  \end{itemize}
+\item
+  故意以詐欺或其他不正當方法逃漏稅捐者
+
+  \begin{itemize}
+  \tightlist
+  \item
+    起算點：【申報日】
+  \item
+    期間：21T1X3K
+  \item
+    7年
+  \end{itemize}
+\end{itemize}
+
+幾種類型
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  短報收入
+
+  \begin{itemize}
+  \tightlist
+  \item
+    老師認爲：
+
+    \begin{enumerate}
+    \def\labelenumii{\arabic{enumii}.}
+    \tightlist
+    \item
+      對於所得來源做誠實的告知，或許是處於法律間接的歧義，不算
+    \end{enumerate}
+  \item
+    數額的短少
+  \item
+    虛增成本費用
+  \item
+    實務上認爲屬於【21T1X3K 故意以詐欺或其他不正當方法逃漏稅捐者】
+
+    \begin{itemize}
+    \tightlist
+    \item
+      申報數額需要提供確信的法律見解：爲什麽少報那20萬？
+    \item
+      以自以爲是的法律見解，而短報，屬於【21T1X3K 故意以詐欺或其他不正當方法逃漏稅捐者】
+    \end{itemize}
+  \end{itemize}
+\item
+  漏報
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    納稅者有多處所得來源，但僅報其中部分，【對所得來源的不完全申報】
+  \item
+    老師認爲其惡性高於短報
+  \end{enumerate}
+\item
+  稅捐規避
+
+  \begin{itemize}
+  \tightlist
+  \item
+    實務上： 屬於【21T1X3K 故意以詐欺或其他不正當方法逃漏稅捐者】（不區分有否隱匿事實）
+  \item
+    老師：【應該區分納稅義務人是否有隱匿其法律行爲的安排事實】
+
+    \begin{itemize}
+    \tightlist
+    \item
+      稅捐規避若并未隱匿課稅事實，是一種取巧的安排【濫用法律形成，每一個法律形成都是真的】，而應該適用【21T1X1K】5年
+    \item
+      21T1X1K及3K之區別
+
+      \begin{itemize}
+      \tightlist
+      \item
+        是因爲課稅構成要件事實之隱匿，稅捐稽徵機關才需要更多的時間去做實施、證據的調查
+      \end{itemize}
+    \item
+      e.g.~我是律師，我向基金會提供法律顧問【應稅的執行業務所得】，但約定，由基金會提供相當數額的獎學金予我的孩子
+
+      \begin{itemize}
+      \tightlist
+      \item
+        將【應稅的執行業務所得】，轉換成孩子的獎學金
+      \end{itemize}
+    \item
+      若申報時有誠實告知事實，只能評價為規避
+
+      \begin{itemize}
+      \tightlist
+      \item
+        稅捐急症機關不需要更多的時間去做事實證據的調查
+      \item
+        老師認爲應該適用【21T1X1K】5年
+      \end{itemize}
+    \item
+      但是事實上，納稅義務人在做【規避】時，并沒有誠實告知其路徑的安排！ （通常自己心有鬼）
+
+      \begin{itemize}
+      \tightlist
+      \item
+        就會變成該當【21T1X3K 故意以詐欺或其他不正當方法逃漏稅捐者】------7年的期間
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{enumerate}
+
+遺產及贈與稅
+
+納稅義務人若沒有完全申報，但躲過了7年，便時效完成
+
+借名行爲
+有時候繼承人自己也不知道被繼承人的財產狀況
+但有時候繼承人是明知有借名行爲，但隱匿
+
+可不可能用22T6K？
+
+\begin{itemize}
+\item
+  SJF第22條6款
+\item
+  \begin{quote}
+  六、稅捐減免所依據處分、事實事後發生變更、不存在或所負擔義務事後未履行，致應補徵或追繳稅款，或\textbf{其他無法依前五款規定起算核課期間者}，自\textbf{核課權可行使之日}起算。
+  \end{quote}
+\item
+  是否包含【借名行爲】？
+
+  \begin{itemize}
+  \tightlist
+  \item
+    前段不算，後段有沒有可能？
+  \end{itemize}
+\item
+  實務上還沒有定論
+\item
+  實務有見解：核課期間是保護納稅義務人對於法安定性的信賴，稅捐稽徵機關不得以此，以推後起算點而在實質上延長期間
+\item
+  在法律的價值上有些鼓勵人們盡力地隱匿事實
+\end{itemize}
+
+\hypertarget{ux5fb5ux6536ux6642ux9593ux4e4bux6642ux6548}{%
+\section{徵收時間之時效}\label{ux5fb5ux6536ux6642ux9593ux4e4bux6642ux6548}}
+
+保全：
+
+\begin{quote}
+第 23 條
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  稅捐之徵收期間為五年，自繳納期間屆滿之翌日起算；應徵之稅捐未於徵收期間徵起者，不得再行徵收。但於徵收期間屆滿前，已移送執行，或已依強制執行法規定聲明參與分配，或已依破產法規定申報債權尚未結案者，不在此限。
+\item
+  應徵之稅捐，有第十條、第二十五條、第二十六條至第二十七條規定情事者，前項徵收期間，自各該變更繳納期間屆滿之翌日起算。
+\item
+  依第三十九條暫緩移送執行或其他法律規定停止稅捐之執行者，第一項徵收期間之計算，應扣除暫緩執行或停止執行之期間。
+\item
+  稅捐之徵收，於徵收期間屆滿前已移送執行者，自徵收期間屆滿之翌日起，五年內未經執行者，不再執行；其於五年期間屆滿前已開始執行，仍得繼續執行，但自五年期間屆滿之日起已逾五年尚未執行終結者，不得再執行。
+\item
+  本法中華民國九十六年三月五日修正前已移送執行尚未終結之案件，自修正之日起逾五年尚未執行終結者，不再執行。但截至一百零六年三月四日納稅義務人欠繳稅捐金額達新臺幣一千萬元或執行期間有下列情形之一者，仍得繼續執行，其執行期間不得逾一百二十一年三月四日：
+  一、行政執行分署依行政執行法第十七條規定，聲請法院裁定拘提或管收義務人確定。
+  二、行政執行分署依行政執行法第十七條之一第一項規定，對義務人核發禁止命令。
+\end{enumerate}
+\end{quote}
+
+老師：盡可能明確地表示你的法規範依據：
+
+23T1X1J1FJ
+
+23條第1項第1句第1分句
+
+SJF49T1X1J
+
+徵收期間之内的行政行爲是做什麽？
+
+\begin{itemize}
+\tightlist
+\item
+  保全
+\item
+  在進入行政執行之前，保護國家債權之實現
+\item
+  物的保全24T1X
+\item
+  人的保全24T3X
+\end{itemize}
+
+\begin{quote}
+第 24 條
+
+1.稅捐稽徵機關得依下列規定實施稅捐保全措施。但已提供相當擔保者，不適用之：
+一、納稅義務人欠繳應納稅捐者，稅捐稽徵機關得就納稅義務人相當於應繳稅捐數額之財產，通知有關機關，不得為移轉或設定他項權利；其為營利事業者，並得通知主管機關限制其減資之登記。
+二、納稅義務人有隱匿或移轉財產、逃避稅捐執行之跡象者，稅捐稽徵機關得於繳納通知文書送達後，聲請法院就其財產實施假扣押，並免提供擔保；其屬納稅義務人已依法申報而未繳納稅捐者，稅捐稽徵機關得於法定繳納期間屆滿後聲請假扣押。
+2. 納稅義務人之財產經依前項規定實施稅捐保全措施後，有下列各款情形之一者，稅捐稽徵機關應於其範圍內辦理該保全措施之解除：
+一、納稅義務人已自行或由第三人提供相當擔保。
+二、納稅義務人對核定稅捐處分依法提起行政救濟，經訴願或行政訴訟撤銷確定。但撤銷後須另為處分，且納稅義務人有隱匿或移轉財產、逃避稅捐執行之跡象，不辦理解除。
+3. 在中華民國境內居住之個人或在中華民國境內之營利事業，其已確定之應納稅捐逾法定繳納期限尚未繳納完畢，所欠繳稅款及已確定之罰鍰單計或合計，個人在新臺幣一百萬元以上，營利事業在新臺幣二百萬元以上者；其在行政救濟程序終結前，個人在新臺幣一百五十萬元以上，營利事業在新臺幣三百萬元以上，得由財政部函請內政部移民署限制其出境；其為營利事業者，得限制其負責人出境，並應依下列規定辦理。但已提供相當擔保者，或稅捐稽徵機關未實施第一項第一款前段或第二款規定之稅捐保全措施者，不適用之：
+一、財政部函請內政部移民署限制出境時，應同時以書面敘明理由並附記救濟程序通知當事人，依法送達。
+二、限制出境之期間，自內政部移民署限制出境之日起，不得逾五年。
+\end{quote}
+
+限制出境------會有2個主管機關
+會被2個機關限制出境
+
+\begin{itemize}
+\tightlist
+\item
+  法務部行政執行署------行政執行法第17條
+\item
+  財政部------稽徵法第24條第3項規定
+\end{itemize}
+
+配套規範不足，法律槼範非常貧瘠，國家法制上：越惡劣的人越能夠活得愉快
+
+限制出境比限制住居所寬鬆得多！
+
+孫道存
+行政執行法第16
+後來增訂
+第 17-1 條 禁奢條款
+
+我們的民事執行法沒有限制出境的手段
+
+德國的民事執行法就有限制出境
+
+保全程序的核心概念：
+稅捐稽徵機關要去\textbf{盡職調查}（DD），爲什麽剛開始課稅構成要件滿足時他有錢，但是在他要繳稅時卻沒錢了
+
+\begin{quote}
+在嚴謹的行政程序當中才是真正的的保護納稅人權利
+人權保護不是喊口號，不是寫一個納稅人權利保護
+而是把稅捐稽徵程序做細緻完整的規範
+嚴謹的程序規定
+\end{quote}
+
+法律規範的不足讓整個稅法的發展有許多的缺漏
+我們需要一套完整的稅捐稽徵法的修法
+
+\hypertarget{ux57f7ux884cux671fux9593}{%
+\section{執行期間}\label{ux57f7ux884cux671fux9593}}
+
+SJF規定執行程序是沒有道理的，因爲根本不在你的主管權限之内
+
+行政執行機關是：
+行政執行署
+
+\hypertarget{ux5728ux5404ux7a05ux4e2d}{%
+\section{在各稅中}\label{ux5728ux5404ux7a05ux4e2d}}
+
+在各稅中有不同的課稅的類型，讓稅捐稽徵法看起來只對特定的稅目才有適用，但其實各稅的稽徵程序的規定完全沒有用到SJF，規範極爲混亂
+
+各稅5種不同的稽徵程序
+
+\hypertarget{w06_0328}{%
+\chapter{W06\_0328}\label{w06_0328}}
+
+\hypertarget{ux7a05ux6350ux6838ux8ab2ux985eux578b}{%
+\section{稅捐核課類型}\label{ux7a05ux6350ux6838ux8ab2ux985eux578b}}
+
+總共可以整理出來5種不同的稅捐核課類型
+
+陳清秀老師的書上，分成3類
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  （納稅義務人自行）申報 + 繳納 + 核課（核定）稅捐的行政處分or以公告的方式代替個別的核定稅捐行政處分的送達
+
+  \begin{itemize}
+  \tightlist
+  \item
+    陳：申報繳納
+  \item
+    綜合所得稅往往是公告代替核定
+  \end{itemize}
+\item
+  （納稅義務人自行）申報 + 繳納
+
+  \begin{itemize}
+  \tightlist
+  \item
+    印花稅、特銷稅、烟酒稅
+  \item
+    完全沒有任何核定稅捐的行政處分
+  \end{itemize}
+\item
+  申報 + 核定 + 繳納
+
+  \begin{itemize}
+  \tightlist
+  \item
+    陳清秀老師：申報復課
+  \item
+    遺產贈與稅、土地增值稅、契稅
+  \end{itemize}
+\item
+  核定 + 繳納
+
+  \begin{itemize}
+  \tightlist
+  \item
+    陳清秀：查定核課\\
+  \item
+    納稅義務人不負擔申報協力義務，不需要納稅義務人的協力義務
+
+    \begin{itemize}
+    \tightlist
+    \item
+      事後事實有所變更，納稅義務人有及時告知的義務？
+    \end{itemize}
+  \item
+    稅捐稽徵機關主動依據別的機關所保有的資料、憑證------【底冊稅】
+  \item
+    房屋稅
+  \item
+    非加值型營業稅
+
+    \begin{itemize}
+    \tightlist
+    \item
+      小規模營業人
+    \end{itemize}
+  \item
+    納稅義務人可以主張信賴保護，就算稅捐稽徵機關沒有做正確的核課
+  \end{itemize}
+\item
+  代徵的稅捐
+
+  \begin{itemize}
+  \tightlist
+  \item
+    證交、期交、娛樂稅
+  \item
+    完全看不到行政處分、也看不到稅捐稽徵機關
+  \item
+    公權力授予私人行使
+  \end{itemize}
+\end{enumerate}
+
+行政處分
+
+\begin{itemize}
+\tightlist
+\item
+  行政救濟的標的
+\item
+  信賴保護之基礎
+\end{itemize}
+
+當有行政處分，相對人就可以提起不服。不然就會有形式存續力的問題，會影響之後【已繳稅款返還權】
+
+5種稽徵類型，看得出我們的稅法是多麽紊亂。
+
+只要有核定稅捐的行政處分，就依據SJF35T1X【復查】SJF38T1X【訴願】
+
+沒有核定處分，SJF28T
+
+房屋稅稅率
+
+\begin{itemize}
+\tightlist
+\item
+  住家用
+
+  \begin{itemize}
+  \tightlist
+  \item
+    自住
+  \item
+    租住
+  \end{itemize}
+\item
+  非住家非營業用
+
+  \begin{itemize}
+  \tightlist
+  \item
+    律師、會計師事務所、土地
+  \item
+    不要過於嘈雜即可
+  \item
+    小規模營業人的
+  \end{itemize}
+\item
+  營業用
+
+  \begin{itemize}
+  \tightlist
+  \item
+    只要有任何營利事業登記在這
+  \end{itemize}
+\end{itemize}
+
+民98年，納稅義務人的房屋在不知情時被登記了營利事業，以營業用稅率
+
+有核定稅捐行政處分，
+
+徑自以SJF28，向稅捐稽徵機關請求溢繳稅款返還權
+【完全無視其行政處分的形式存續力】
+
+行政機關自撤其違法的行政處分【行政程序法117T】
+
+SJF修正的歷史
+
+\begin{quote}
+（舊）第二十八條
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  納稅義務人自行適用法令錯誤或計算錯誤溢繳之稅款，得自繳納之日起五年內提出具體證明，申請退還；屆期未申請者，不得再行申請。
+\item
+  納稅義務人因稅捐稽徵機關適用法令錯誤、計算錯誤或其他可歸責於政府機關之錯誤，致溢繳稅款者，稅捐稽徵機關應自知有錯誤原因之日起二年內查明退還，其退還之稅款\textbf{不以五年內溢繳者為限}。
+\item
+  前二項溢繳之稅款，納稅義務人以現金繳納者，應自其繳納該項稅款之日起，至填發收入退還書或國庫支票之日止，按溢繳之稅額，依繳納稅款之日郵政儲金一年期定期儲金固定利率，按日加計利息，一併退還。
+\item
+  本條修正施行前，因第二項事由致溢繳稅款者，適用修正後之規定。
+\item
+  前項情形，稅捐稽徵機關於本條修正施行前已知有錯誤之原因者，二年之退還期間，自本條修正施行之日起算。
+\end{enumerate}
+\end{quote}
+
+【完全沒有時效限制】
+
+終於在110年11月30日修正，填補了這樣的漏洞
+
+核定稅捐，產生信賴保護
+
+稅捐機關要受到自我束縛
+
+納稅義務人信賴保護，要建立在
+
+納稅義務人提供錯誤的資料、事實，不得主張信賴保護的適用，【沒有正當的信賴基礎】
+
+稅捐稽徵機關
+
+稅捐稽徵機關，是否有【事後查核權保留】？
+
+爲什麽在依法課稅底下，允許行政機關做一個附附款的保留的行政行爲？
+
+\begin{itemize}
+\tightlist
+\item
+  稅捐本質上是大量事件
+\item
+  證據資料往往偏向納稅義務人的支配範圍之内
+\item
+  在法有明文規定+行政行爲有明確的意思表示的情況下，允許行政行爲做出附副款的行政行爲。
+\item
+  在這一段期間之内，納稅人不得主張信賴保護
+\end{itemize}
+
+但是在台灣的稅法中，并沒有做出明文規定，關於稅捐稽徵機關得做附查核權保留，實務上的行政行爲也沒有明確的意思，要保留查核權
+
+用法律解釋的方法：SJF21T2X1FJ
+
+\begin{quote}
+第 21 條
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  稅捐之核課期間，依下列規定：
+  一、依法應由納稅義務人申報繳納之稅捐，已在規定期間內申報，且無故意以詐欺或其他不正當方法逃漏稅捐者，其核課期間為五年。
+  二、依法應由納稅義務人實貼之印花稅，及應由稅捐稽徵機關依稅籍底冊或查得資料核定課徵之稅捐，其核課期間為五年。
+  三、未於規定期間內申報，或故意以詐欺或其他不正當方法逃漏稅捐者，其核課期間為七年。
+\item
+  在前項核課期間內，經另發現應徵之稅捐者，仍應依法補徵或\textbf{並予處罰}；在核課期間內未經發現者，以後不得再補稅處罰。
+\end{enumerate}
+\end{quote}
+
+什麽是【另發現應徵之稅捐】
+\textbf{納稅義務人是否有完全誠實的申報}？
+
+\begin{itemize}
+\tightlist
+\item
+  納稅義務人申報事實之外之事實，可以導出應納之稅捐，納稅義務人沒有做誠實、完全的申報，構成稅捐稽徵機關補徵之正當基礎
+\item
+  若納稅義務人已完全誠實申報事實，但是以不同於稅捐機關的法律見解：
+
+  \begin{itemize}
+  \tightlist
+  \item
+    法律見解的歧義------可以另補徵稅捐，但并不構成處罰的事由
+  \item
+    實務上：可以補稅，沒有裁罰
+  \item
+    老師：補稅也是違反信賴的！應該不能補稅、也不能裁罰
+  \end{itemize}
+\end{itemize}
+
+實務上：\textbf{揭露免罰}
+
+\begin{itemize}
+\tightlist
+\item
+  誠實、及時、全面性地告知事實
+\end{itemize}
+
+我們的的核課稅捐的行政處分
+
+\begin{itemize}
+\tightlist
+\item
+  核課稅捐的行政處分
+\item
+  核課期間内，補稅的行政處分
+\end{itemize}
+
+并存的數個（2個以上）行政處分，我們采取并存說
+
+紛爭無法一次解決，導出多個行政救濟程序，裁判可能互相矛盾
+
+用法律解釋的方法：SJF21T2X1FJ
+
+并不自然導出【并存說】，可以像德國人的【以新代舊】
+用新的行政處分取代舊的行政處分
+
+實務上 用【并存說】而非【取代說】的理由
+
+原來舊的，已經有形式存續力了，就不動他。
+
+但是德國人的做法：舊的行政處分，舊的部分有形式存續力，不得主張不服。納稅義務人只能在新的行政處分新增加稅額的部分來聲明不服。
+
+\hypertarget{ux7a3dux5fb5ux7a0bux5e8fux7b2cux4e8cux500bux968eux6bb5ux4fddux5168ux7a0bux5e8f}{%
+\section{稽徵程序第二個階段：保全程序}\label{ux7a3dux5fb5ux7a0bux5e8fux7b2cux4e8cux500bux968eux6bb5ux4fddux5168ux7a0bux5e8f}}
+
+保全程序
+
+國家將來進入執行程序，能夠執行得到
+
+在比例原則上是一個必要的程序
+
+其實保全程序應該更早一些。
+
+\begin{itemize}
+\tightlist
+\item
+  物的保全
+\item
+  人的保全
+\end{itemize}
+
+SJF24T1X
+
+\begin{quote}
+第 24 條
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  稅捐稽徵機關得依下列規定實施稅捐保全措施。但已提供相當擔保者，不適用之：
+  一、納稅義務人欠繳應納稅捐者，稅捐稽徵機關得就納稅義務人相當於應繳稅捐數額之財產，通知有關機關，不得為移轉或設定他項權利；其為營利事業者，並得通知主管機關限制其減資之登記。
+  二、納稅義務人有隱匿或移轉財產、逃避稅捐執行之跡象者，稅捐稽徵機關得於繳納通知文書送達後，聲請法院就其財產實施假扣押，並免提供擔保；其屬納稅義務人已依法申報而未繳納稅捐者，稅捐稽徵機關得於法定繳納期間屆滿後聲請假扣押。
+\end{enumerate}
+\end{quote}
+
+保全的範圍：【應繳稅捐數額】範圍内之財產+【49T：滯納金、利息、滯報金、怠報金及罰鍰】未實現稅捐債權之一切範圍：主給付+附帶給付（具裁罰+不具裁罰）
+
+實務上采取這種最寬廣的解釋
+
+老師：比較偏好：罰鍰應該不要包括，裁罰是對納稅義務人違反協力義務之制裁。
+頂多是稅款本身和不具有非難性質之附帶給付之請求。
+
+SJF49T
+
+\begin{quote}
+第 49 條
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  滯納金、利息、滯報金、怠報金及罰鍰等，除本法另有規定者外，準用本法有關稅捐之規定。但第六條關於稅捐優先及第二十六條之一第二項、第三十八條第二項、第三項關於加計利息之規定，對於滯報金、怠報金及罰鍰不在準用之列。
+\item
+  中華民國一百十年十一月三十日修正之本條文施行前，已移送執行之滯報金及怠報金案件，其徵收之順序，適用修正施行前之規定。
+\end{enumerate}
+\end{quote}
+
+第三人財產可以查封嗎？
+
+第三人如果提供自己的財產作爲擔保，可以免除對於納稅義務人名下財產做保全
+
+借名的財產？
+在納稅義務人名下，但是納稅義務人只是出名人。怎麽處理？
+老師：都要！借名行爲就是危險的。
+
+24T1X1K其實只有特定的財產才有適用餘地：本質上是【假扣押】
+
+【通知有關機關，不得為移轉或設定他項權利；其為營利事業者，並得通知主管機關限制其減資之登記。】
+
+如果東西本身是私營事業，比如是上市貴股票，改上市貴公司，不是有關機關。集中保管公司？看起來集保公司是私營公司，但是他是負有公法上義務的。有所爭議。
+
+其為營利事業者，並得通知主管機關限制其減資之登記。
+
+24T1X2K才是真正的
+
+不提供擔保的假扣押程序，本來就可以涵蓋24T1X1K，這2款是沒有意義的分類
+
+假扣押就是限制移轉，限制做減資登記【禁止為特定行爲】，是假處分的概念。
+
+跟民事法中的【假扣押（要錢）、假處分（要物）】
+
+重點是要錢，假扣押才是重點的保全程序
+
+下個禮拜：24T1X2K
++24T3X人的保全程序
++25T期前徵收
+
+\bibliography{book.bib,packages.bib}
+
+\backmatter
+\printindex
+
+\end{document}
